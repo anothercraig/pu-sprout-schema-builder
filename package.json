@@ -6,14 +6,29 @@
   "author": "Manta",
   "license": "MIT",
   "private": false,
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "scripts": {
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
+    "webpack": "webpack -wd"
+  },
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "bable-loader": "^0.0.1-security",
+    "ejs": "^2.5.7",
     "eslint": "^4.12.1",
     "eslint-plugin-react": "^7.5.1",
     "express": "^4.16.2",
@@ -21,5 +36,8 @@
     "react-dom": "^16.2.0",
     "react-jsonschema-form": "^1.0.0",
     "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
   }
 }
