@@ -1,0 +1,22 @@
+{
+  "data": {
+    "types": [
+      {
+        "id": "email",
+        "schema": "email"
+      },
+      {
+        "id": "phone_number",
+        "schema": "phone number"
+      },
+      {
+        "id": "name",
+        "schema": "name"
+      },
+      {
+        "id": "date",
+        "schema": "date"
+      }
+    ] 
+  }
+}
