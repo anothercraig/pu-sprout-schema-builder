@@ -3,19 +3,32 @@
     "types": [
       {
         "id": "email",
-        "schema": "email"
+        "schema": { 
+          "type": "string", 
+          "format": "email" 
+        }
       },
       {
         "id": "phone_number",
-        "schema": "phone number"
+        "schema": { 
+          "type": "string", 
+          "pattern": "^[0-9()\\-\\.\\s]+$" 
+        }
       },
       {
         "id": "name",
-        "schema": "name"
+        "schema": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 128
+        }
       },
       {
         "id": "date",
-        "schema": "date"
+        "schema": { 
+          "type": "string", 
+          "format": "date" 
+        }
       }
     ] 
   }
