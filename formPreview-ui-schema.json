@@ -1,0 +1,10 @@
+{
+  "ui:options": {
+    "inline": true
+  },
+  "telephone": {
+    "ui:options": {
+      "inputType": "phone_number"
+    }
+  }
+}
